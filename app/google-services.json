@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "180972298533",
+    "firebase_url": "https://sewa-gudang-3a533.firebaseio.com",
+    "project_id": "sewa-gudang-3a533",
+    "storage_bucket": "sewa-gudang-3a533.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180972298533:android:0649f95b962c8247",
+        "android_client_info": {
+          "package_name": "com.tigapermata.sewagudangapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180972298533-23oe4jl5boe8th401s51baj2d77ctkk4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tigapermata.sewagudangapps",
+            "certificate_hash": "6d35b475738d799ba336c9eed9f90c53825e3a74"
+          }
+        },
+        {
+          "client_id": "180972298533-7u377nhiukjkh5as6j92h5h81m9ck014.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCBY7o6ubhfDmht5o-6iSJl2AiDl_XeP4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180972298533-7u377nhiukjkh5as6j92h5h81m9ck014.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

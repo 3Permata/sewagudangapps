@@ -1,0 +1,2533 @@
+{
+	"info": {
+		"_postman_id": "b932d6e6-40e9-4d62-a089-5720107e8e12",
+		"name": "sewagudang",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "iwan.sulistio@3permata.co.id",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Iwan1981",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/loginmobile",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"loginmobile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search gudang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "2d0ed9c2980c9d034768224e4e06a674986c7d0882c455ec7bc71d376faaef933103816ff3ebc5db948deb852be7c9f2af97c0fb073ebae717048e55547f5800",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/allgudanguser",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"allgudanguser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "id_gudang",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "2d0ed9c2980c9d034768224e4e06a674986c7d0882c455ec7bc71d376faaef933103816ff3ebc5db948deb852be7c9f2af97c0fb073ebae717048e55547f5800",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/allprojectuser",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"allprojectuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "home info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/home",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list inbound",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "2d0ed9c2980c9d034768224e4e06a674986c7d0882c455ec7bc71d376faaef933103816ff3ebc5db948deb852be7c9f2af97c0fb073ebae717048e55547f5800",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/15/140/inbound",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"15",
+						"140",
+						"inbound"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list incoming",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/15/140/inbound/2514",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"15",
+						"140",
+						"inbound",
+						"2514"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "form incoming",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/incomingForm",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"incomingForm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "input incoming",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_user\": \"178\",\n    \"token\": \"d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e\",\n    \"tanggal\" : \"10-01-2018\",\n    \"data_lain\": [\n        {\n            \"label\": \"Container\",\n            \"isi\": \"SITA 323569\"\n        },\n        {\n            \"label\": \"Sopir\",\n            \"isi\": \"AMIN\"\n        },\n        {\n            \"label\": \"No Police\",\n            \"isi\": \"L 1234 GL\"\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/inbound/1415/incomingAdd",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"inbound",
+						"1415",
+						"incomingAdd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check list incoming (scan)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "I22121800010006",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/inbound/1217/incomingChecklist/553",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"inbound",
+						"1217",
+						"incomingChecklist",
+						"553"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "incomingChecklistInput",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_inbound_detail",
+							"value": "11743",
+							"type": "text"
+						},
+						{
+							"key": "nama_locator",
+							"value": "n/a",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/inbound/1217/incomingChecklistInput/553",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"inbound",
+						"1217",
+						"incomingChecklistInput",
+						"553"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "autocompleteLocator",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/inbound/1217/autocompleteLocator",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"inbound",
+						"1217",
+						"autocompleteLocator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dataitemcheked",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/15/140/inbound/2514/dataitemcheked/1695",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"15",
+						"140",
+						"inbound",
+						"2514",
+						"dataitemcheked",
+						"1695"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inbound detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/inboundDetail/1326",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"inboundDetail",
+						"1326"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "autocompleteItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/inbound/1326/autocompleteItem",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"inbound",
+						"1326",
+						"autocompleteItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "formPackingList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/14/39/inbound/1418/formPackingList",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"14",
+						"39",
+						"inbound",
+						"1418",
+						"formPackingList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addItemPackingList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_user\": \"178\",\n    \"token\": \"d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e\",\n    \"id_item\" : \"282\",\n    \"qty\" : \"10\",\n    \"package\" : \"0\",\n    \"qty_package\" : \"4\",\n    \"label\" : \"label2222\",\n    \"batch\" : \"batc1\",\n    \"expired_date\":\"01-10-2019\",\n    \"actual_net\" : \"345\",\n    \"actual_cbm\" : \"56\",\n    \"data_lain\": [\n        {\n            \"label\": \"picker\",\n            \"isi\": \"giki\"\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/inbound/1771/addItemPackingList",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"inbound",
+						"1771",
+						"addItemPackingList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "jenis_generated",
+							"value": "manual",
+							"type": "text"
+						},
+						{
+							"key": "kode_item",
+							"value": " kode1",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "hitung_cbm",
+							"value": "manual",
+							"type": "text"
+						},
+						{
+							"key": "panjang",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "lebar",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "tinggi",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "total_cbm",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nama_item",
+							"value": "transport",
+							"type": "text"
+						},
+						{
+							"key": "uom",
+							"value": "kg",
+							"type": "text"
+						},
+						{
+							"key": "tonase",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "satuan_tonase",
+							"value": "kg",
+							"type": "text"
+						},
+						{
+							"key": "berat_kotor",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/addItem/1415",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"addItem",
+						"1415"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list incoming (gree)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/9/78/inbound/1489",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"9",
+						"78",
+						"inbound",
+						"1489"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "datalabelcheked",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/20/87/inbound/2062/datalabelcheked/1258",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"20",
+						"87",
+						"inbound",
+						"2062",
+						"datalabelcheked",
+						"1258"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DataLabelItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_item",
+							"value": "5117",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/20/87/inbound/1859/dataLabelItem/1081",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"20",
+						"87",
+						"inbound",
+						"1859",
+						"dataLabelItem",
+						"1081"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scanLabelItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_item",
+							"value": "5117",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "label12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/20/87/inbound/2062/scanLabelItem/1258",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"20",
+						"87",
+						"inbound",
+						"2062",
+						"scanLabelItem",
+						"1258"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dataLabelItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_item",
+							"value": "4188",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/9/78/inbound/1489/dataLabelItem/773",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"9",
+						"78",
+						"inbound",
+						"1489",
+						"dataLabelItem",
+						"773"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DataLocator",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/DataLocator",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"DataLocator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filterLabel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_locator",
+							"value": "71",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/filterItem/label",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"filterItem",
+						"label"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filterItem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_locator",
+							"value": "71",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/filterItem/item",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"filterItem",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter label putaway (baru)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/filterItem2/label",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"filterItem2",
+						"label"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter item putaway (baru)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/filterItem2/item",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"filterItem2",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cari data item putaway (label)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "filter_item",
+							"value": "I02101800010003",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/cariDataItem/label",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"cariDataItem",
+						"label"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cari data item putaway (item)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "filter_item",
+							"value": "282",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/cariDataItem/item",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"cariDataItem",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "history putaway",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/putawayHistory",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"putawayHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movelocator",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_locator_lama",
+							"value": "71",
+							"type": "text"
+						},
+						{
+							"key": "id_locator_baru",
+							"value": "2750",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "id_item",
+							"value": "282",
+							"type": "text"
+						},
+						{
+							"key": "id_inventory_detail",
+							"value": "8333",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/movelocator",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"movelocator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ceklabelscan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "I02101800010001",
+							"type": "text"
+						},
+						{
+							"key": "id_locator",
+							"value": "1969",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/ceklabelscan",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"ceklabelscan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cekItemUptodate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_item",
+							"value": "4262",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/9/78/inbound/1489/cekItemUptodate",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"9",
+						"78",
+						"inbound",
+						"1489",
+						"cekItemUptodate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapusLabel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_item",
+							"value": "4262",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "label12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/9/78/inbound/1489/hapusLabel",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"9",
+						"78",
+						"inbound",
+						"1489",
+						"hapusLabel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapusLabel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_item",
+							"value": "4262",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "label12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/9/78/inbound/1489/hapusLabel",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"9",
+						"78",
+						"inbound",
+						"1489",
+						"hapusLabel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listPicking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/listPicking",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"listPicking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listLoading",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/listLoading",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"listLoading"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDataPicking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "dietta.anggie@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "User123!@#",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/getDataPicking/4219",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"getDataPicking",
+						"4219"
+					]
+				},
+				"description": "get list picking"
+			},
+			"response": []
+		},
+		{
+			"name": "getDataPicking by item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/87/outbound/getDataPicking/4146",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"87",
+						"outbound",
+						"getDataPicking",
+						"4146"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list item picking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_item",
+							"value": "5118",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/20/87/outbound/getDataPickingByitem/4179",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"20",
+						"87",
+						"outbound",
+						"getDataPickingByitem",
+						"4179"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scan item picking by item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "label10",
+							"type": "text"
+						},
+						{
+							"key": "id_item",
+							"value": "5061",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/87/outbound/scanItemLabel/4145",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"87",
+						"outbound",
+						"scanItemLabel",
+						"4145"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prosesPicking (not scan)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_inventory_detail",
+							"value": "11393",
+							"type": "text"
+						},
+						{
+							"key": "id_outbound_detail",
+							"value": "10755",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/prosesPicking/3086",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"prosesPicking",
+						"3086"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "undo scan on picking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_inventory_detail",
+							"value": "11393",
+							"type": "text"
+						},
+						{
+							"key": "id_outbound_detail",
+							"value": "10755",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/undo/2864",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"undo",
+						"2864"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prosesPickingScan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "O200319005002",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/prosesPickingScan/3086",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"prosesPickingScan",
+						"3086"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list outgoing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/outgoing/5203",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"outgoing",
+						"5203"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "form outgoing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/outgoingForm",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"outgoingForm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "input outgoing",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_user\": \"178\",\n    \"token\": \"d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e\",\n    \"tanggal\" : \"10-07-2018\",\n    \"data_lain\": [\n        {\n            \"label\": \"Container\",\n            \"isi\": \"SITA 323569\"\n        },\n        {\n            \"label\": \"Sopir\",\n            \"isi\": \"AMIN\"\n        },\n        {\n            \"label\": \"No Police\",\n            \"isi\": \"L 1234 GL\"\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/outgoing/1987/addoutgoing",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"outgoing",
+						"1987",
+						"addoutgoing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list item loading",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/5170/listItemPicked/2923",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"5170",
+						"listItemPicked",
+						"2923"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loading item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_outbound_detail",
+							"value": "23898",
+							"type": "text"
+						},
+						{
+							"key": "id_inventory_detail",
+							"value": "8337",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/4091/prosesLoading/1938",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"4091",
+						"prosesLoading",
+						"1938"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loading item by label",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "label",
+							"value": "I26091900010001",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/outbound/5170/outgoingfilterlabel/2923",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"outbound",
+						"5170",
+						"outgoingfilterlabel",
+						"2923"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancel picking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "178",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_outbound_detail",
+							"value": "24473",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/87/outbound/cancelPicking/4179",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"87",
+						"outbound",
+						"cancelPicking",
+						"4179"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list stock count",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/stockCount/listStockCount",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"stockCount",
+						"listStockCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add master stock count",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "tanggal",
+							"value": "11-01-2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/stockCount/addStockCount",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"stockCount",
+						"addStockCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list detail stock count by item",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/stockCount/detailStockCount/9/by/item",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"stockCount",
+						"detailStockCount",
+						"9",
+						"by",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list detail stock count by label",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/stockCount/detailStockCount/9/by/label",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"stockCount",
+						"detailStockCount",
+						"9",
+						"by",
+						"label"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add detail stock count by item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_locator",
+							"value": "1970",
+							"type": "text"
+						},
+						{
+							"key": "item",
+							"value": "0992",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/stockCount/addDetailStockCount/9/by/item",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"stockCount",
+						"addDetailStockCount",
+						"9",
+						"by",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add detail stock count by label",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "196",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "d08381839dda731bf5e9708934b3d22c6abfb503eb83e8642d578fa2afdccb08df5248c5a70238fb1c35218baf67d7b0e18dd3210f1423fcfc95fcadea6bef0e",
+							"type": "text"
+						},
+						{
+							"key": "id_locator",
+							"value": "1970",
+							"type": "text"
+						},
+						{
+							"key": "item",
+							"value": "I02091900010001",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apps.sewagudang.id/3/6/stockCount/addDetailStockCount/9/by/label",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"sewagudang",
+						"id"
+					],
+					"path": [
+						"3",
+						"6",
+						"stockCount",
+						"addDetailStockCount",
+						"9",
+						"by",
+						"label"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

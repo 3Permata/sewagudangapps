@@ -1,0 +1,25 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.tigapermata.sewagudangapps",
+    "sha256_cert_fingerprints":
+    ["18:A5:C7:77:A3:C0:AF:80:F6:A9:AC:A5:27:23:75:34:04:74:9A:73:4E:8F:EC:0B:63:8C:E7:E7:94:DF:3D:63"]
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://apps.sewagudang.id"
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.tigapermata.sewagudangapps",
+    "sha256_cert_fingerprints":
+    ["18:A5:C7:77:A3:C0:AF:80:F6:A9:AC:A5:27:23:75:34:04:74:9A:73:4E:8F:EC:0B:63:8C:E7:E7:94:DF:3D:63"]
+  }
+}]

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tigapermata.sewagudangapps">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="AppController"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.outbound.ListOutgoingActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="sensorPortrait" />
+        <activity android:name=".activity.outbound.FormOutgoingActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait" />
+        <activity android:name=".activity.outbound.LoadingItemChecklistActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.outbound.PickingListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.outbound.PickingChecklistActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.outbound.PickingListByItemActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.inbound.ChecklistByItem"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.inbound.ItemCheckListActivityByItem"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- <intent-filter android:autoVerify="true" -->
+            <!-- android:label="@string/app_name"> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+            <!-- <data -->
+            <!-- android:scheme="https" -->
+            <!-- android:host="apps.sewagudang.id" -->
+            <!-- android:pathPrefix="/site/useraktif/token_email/" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.SearchWarehouseActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.ActivationPasswordActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="apps.sewagudang.id"
+                    android:pathPrefix="/site/useraktif/token_email/"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.inbound.ListIncomingActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.inbound.ScanByItemActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.inbound.FormIncomingActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.inbound.AddItemIncomingActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.ScanActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.inbound.ItemCheckListActivityByLabel"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.inbound.AddMasterItemActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.putaway.ScanPutAwayActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.putaway.HistoryPutAwayActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.stockcount.DetailStockCountByItemActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.stockcount.DetailStockCountByLabelActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="sensorPortrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_inbound"
+        android:icon="@drawable/ic_inbound"
+        android:title="@string/title_inbound" />
+
+    <item
+        android:id="@+id/navigation_putaway"
+        android:icon="@drawable/ic_putaway"
+        android:title="@string/title_putaway" />
+
+    <item
+        android:id="@+id/navigation_picking"
+        android:icon="@drawable/ic_picking"
+        android:title="@string/title_picking" />
+
+    <item
+        android:id="@+id/navigation_loading"
+        android:icon="@drawable/ic_outbound"
+        android:title="@string/title_loading" />
+
+    <item
+        android:id="@+id/navigation_stockon"
+        android:icon="@drawable/ic_stockon"
+        android:title="@string/title_stockon" />
+
+</menu>

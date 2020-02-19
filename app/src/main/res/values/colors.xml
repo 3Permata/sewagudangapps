@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--ignite final theme-->
+    <color name="cello">#1E4363</color>
+    <color name="double_pearl_lusta">#FCF2CB</color>
+    <color name="yellow_sea">#FFB00D</color>
+    <color name="crusta">#FF8926</color>
+    <color name="thunderbird">#BC2D19</color>
+
+    <!--copia de colores theme-->
+    <color name="chathams_blue">#165B88</color>
+    <color name="persian_green">#03A596</color>
+    <color name="fuel_yellow">#F0AA21</color>
+    <color name="flush_orange">#FF8000</color>
+    <color name="pomegranate">#F0412C</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pickled_bluewood">#314258</color>
+    <color name="oslo_gray">#888B8F</color>
+
+    <color name="transparent_blue">#62404040</color>
+
+    <!--banner-->
+    <color name="blue_dianne">#204E5F</color>
+    <color name="gumbo">#79A7A8</color>
+    <color name="vivid_tangerine">#FF8984</color>
+    <color name="jungle_mist">#FFFFFF</color>
+    <color name="aqua_squeeze">#EDF7F5</color>
+
+    <color name="searchHintColor_searchToolbar">#727272</color>
+    <color name="searchTextColor_searchToolbar">#212121</color>
+
+    <color name="black_semi_transparent">#64000000</color>
+    <color name="scarlet">#ff2400</color>
+    <color name="maroon">#800000</color>
+    <color name="candy_apple">#ff0800</color>
+    <color name="grey">#8a8a8a</color>
+    <color name="lightGrey">#dbdbdb</color>
+    <color name="red_logo">#da271f</color>
+    <color name="yellow_incomplete">#f39d14</color>
+    <color name="green_complete">#02a75b</color>
+    <color name="blue_done">#02c0ef</color>
+    <color name="blue_picking">#3D8EBC</color>
+    <color name="purple_picked">#615DA9</color>
+    <color name="pink_ready">#FF58AD</color>
+    <color name="red_unmatch">#DD4528</color>
+    
+
+</resources>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_detail_sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/maroon_border"
+            android:paddingBottom="8dp">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.15" />
+
+            <TextView
+                android:id="@+id/tanggal_detail_sc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/maroon_border"
+                android:fontFamily="@font/andika_regular"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="11-01-2020 10:48:03"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/status_detail_sc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red_unmatch"
+                android:fontFamily="@font/andika_regular"
+                android:paddingStart="8dp"
+                android:paddingTop="1dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="3dp"
+                android:text="Unmatch"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/user"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tanggal_detail_sc" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/item"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <TextView
+                android:id="@+id/nama_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="Rian"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline45"
+                app:layout_constraintTop_toBottomOf="@+id/tanggal_detail_sc" />
+
+            <TextView
+                android:id="@+id/nama_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/andika_regular"
+                android:gravity="start"
+                android:singleLine="true"
+                android:text="0991 - item testwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline45"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline160"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.22" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/locator"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+            <TextView
+                android:id="@+id/textViewLocator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="A-X01A"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline160"
+                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/qty_input"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/text"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline182"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/qty_aktual"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/text"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline183"
+                app:layout_constraintStart_toStartOf="@+id/guideline182"
+                app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline182"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.33" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline183"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.66" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/hasil"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/text"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline183"
+                app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+            <TextView
+                android:id="@+id/textViewQtyInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/andika_regular"
+                android:text="20"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintEnd_toStartOf="@+id/guideline182"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+            <TextView
+                android:id="@+id/textViewQtyAktual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/andika_regular"
+                android:text="20"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintEnd_toStartOf="@+id/guideline183"
+                app:layout_constraintStart_toStartOf="@+id/guideline182"
+                app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+            <TextView
+                android:id="@+id/textViewHasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/andika_regular"
+                android:text="0"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline183"
+                app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

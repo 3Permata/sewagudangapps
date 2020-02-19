@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.inbound.AddItemIncomingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_add_item"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/maroon"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout6">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline112"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline114"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="@string/item"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <AutoCompleteTextView
+                android:id="@+id/id_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintEnd_toStartOf="@+id/guideline116"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline116"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.78" />
+
+            <ImageButton
+                android:id="@+id/add_master_item"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ripple_effect_maroon"
+                app:layout_constraintEnd_toStartOf="@+id/guideline112"
+                app:layout_constraintStart_toStartOf="@+id/guideline117"
+                app:layout_constraintTop_toBottomOf="@+id/textView22"
+                app:srcCompat="@drawable/ic_add_black_24dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline117"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.8" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="@string/actual_weight"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/id_item" />
+
+            <EditText
+                android:id="@+id/actual_weight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintEnd_toStartOf="@+id/guideline116"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="kg"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline117"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="@string/qty_uom"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/actual_weight" />
+
+            <EditText
+                android:id="@+id/qty_add_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintEnd_toStartOf="@+id/guideline116"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <TextView
+                android:id="@+id/uom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="UOM"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline117"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="@string/create_package"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/qty_add_item" />
+
+            <CheckBox
+                android:id="@+id/cb_create_package"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                app:layout_constraintStart_toStartOf="@+id/guideline118"
+                app:layout_constraintTop_toBottomOf="@+id/qty_add_item" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.45" />
+
+            <EditText
+                android:id="@+id/qty_pkg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="number"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintEnd_toStartOf="@+id/guideline119"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline119"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.55" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline120"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.57" />
+
+            <TextView
+                android:id="@+id/textQtyPerPck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="@string/quantity_per"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/text"
+                app:layout_constraintStart_toStartOf="@+id/guideline120"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="@string/actual_cbm"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/qty_pkg" />
+
+            <EditText
+                android:id="@+id/actual_cbm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintEnd_toStartOf="@+id/guideline116"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="kg"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline117"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="@string/label"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/actual_cbm" />
+
+            <EditText
+                android:id="@+id/label_add_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="textNoSuggestions"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintEnd_toStartOf="@+id/guideline112"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+            <TextView
+                android:id="@+id/label_generated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="@string/label_generated"
+                android:textColor="@color/pomegranate"
+                android:textSize="@dimen/title_text"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="@string/batch"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/label_add_item" />
+
+            <EditText
+                android:id="@+id/batch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="textNoSuggestions"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintEnd_toStartOf="@+id/guideline112"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="@string/expired_date"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/title_text"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/batch" />
+
+            <TextView
+                android:id="@+id/expired_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/andika_regular"
+                android:text="17-05-2001"
+                android:textColor="@color/pickled_bluewood"
+                android:textSize="@dimen/text"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ripple_effect_maroon"
+                android:fontFamily="@font/andika_regular"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header2"
+                app:layout_constraintEnd_toStartOf="@+id/guideline112"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/rv_packing_list" />
+
+            <ImageView
+                android:id="@+id/imageViewCalendar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline122"
+                app:layout_constraintStart_toStartOf="@+id/guideline121"
+                app:layout_constraintTop_toBottomOf="@+id/textView36"
+                app:srcCompat="@drawable/calendar_icon" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_packing_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline112"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline114"
+                app:layout_constraintTop_toBottomOf="@+id/expired_date" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@id/viewSemiTransparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_semi_transparent"
+        android:clickable="true"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLoading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
